@@ -1,4 +1,4 @@
-## universal-private-key-generator
+## universal-privatekey-generator
 
 This Python code defines a simple graphical user interface (GUI) application using the `Tkinter` library for generating cryptocurrency seed phrases, private keys, and corresponding wallet import formats (WIFs). The application allows the user to generate seed phrases of different lengths (12, 15, 18, 21, or 24 words) and displays the corresponding hex representation of the seed, WIF, and the mnemonic words.
 
