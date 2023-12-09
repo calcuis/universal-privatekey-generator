@@ -56,20 +56,5 @@ btn_24 = Button(text="Generate 24-Word Seed", command=lambda: generate(32))
 ```
 Defines a function generate that takes a parameter number, generates a random seed using `secrets.token_bytes`, and then updates the `Entry` widgets (`h`, `w`, `e`) with the hex seed, WIF, and mnemonic words, respectively.
 Creates five `Tkinter` `Button` widgets (`btn_12`, `btn_15`, `btn_18`, `btn_21`, `btn_24`) for generating seed phrases with different lengths. Each button is associated with the `generate` function and a specific seed length.
-```
-btn_12.grid(row=0, column=0, sticky="nsew")
-btn_15.grid(row=0, column=1, sticky="nsew")
-btn_18.grid(row=0, column=2, sticky="nsew")
-btn_21.grid(row=0, column=3, sticky="nsew")
-btn_24.grid(row=0, column=4, sticky="nsew")
-h.grid(row=1, columnspan=5, sticky="nsew")
-w.grid(row=2, columnspan=5, sticky="nsew")
-e.grid(row=3, columnspan=5, sticky="nsew")
-
-root.mainloop()
-```
-Positions the buttons and `Entry` widgets within the `Tkinter` grid layout.
-
-Starts the Tkinter event loop (`mainloop`), allowing the user to interact with the GUI.
 
 In summary, this code creates a basic GUI application for generating cryptocurrency seed phrases, displaying their hex representations, corresponding WIFs, and mnemonic words. The user can choose the length of the seed phrase by clicking on the respective buttons.
