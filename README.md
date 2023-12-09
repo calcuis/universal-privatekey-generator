@@ -14,13 +14,13 @@ root = Tk()
 root.title("Seed Generator")
 root.columnconfigure([0, 1, 2, 3, 4], minsize=180)
 ```
-Creates the main window (root) for the GUI with the title "Seed Generator" and configures the column widths.
+Creates the main window (`root`) for the GUI with the title "Seed Generator" and configures the column widths.
 ```
 h = Entry()
 w = Entry()
 e = Entry()
 ```
-Creates three `Tkinter` `Entry` widgets (h, w, e) for displaying the hex seed, WIF, and mnemonic words, respectively.
+Creates three `Tkinter` `Entry` widgets (`h`, `w`, `e`) for displaying the hex seed, WIF, and mnemonic words, respectively.
 ```
 def generate(number):
     language = 'english'
@@ -54,8 +54,8 @@ btn_18 = Button(text="Generate 18-Word Seed", command=lambda: generate(24))
 btn_21 = Button(text="Generate 21-Word Seed", command=lambda: generate(28))
 btn_24 = Button(text="Generate 24-Word Seed", command=lambda: generate(32))
 ```
-Defines a function generate that takes a parameter number, generates a random seed using `secrets.token_bytes`, and then updates the `Entry` widgets (h, w, e) with the hex seed, WIF, and mnemonic words, respectively.
-Creates five `Tkinter` `Button` widgets (btn_12, btn_15, btn_18, btn_21, btn_24) for generating seed phrases with different lengths. Each button is associated with the `generate` function and a specific seed length.
+Defines a function generate that takes a parameter number, generates a random seed using `secrets.token_bytes`, and then updates the `Entry` widgets (`h`, `w`, `e`) with the hex seed, WIF, and mnemonic words, respectively.
+Creates five `Tkinter` `Button` widgets (`btn_12`, `btn_15`, `btn_18`, `btn_21`, `btn_24`) for generating seed phrases with different lengths. Each button is associated with the `generate` function and a specific seed length.
 ```
 btn_12.grid(row=0, column=0, sticky="nsew")
 btn_15.grid(row=0, column=1, sticky="nsew")
@@ -68,7 +68,7 @@ e.grid(row=3, columnspan=5, sticky="nsew")
 
 root.mainloop()
 ```
-Positions the buttons and Entry widgets within the Tkinter grid layout.
+Positions the buttons and `Entry` widgets within the `Tkinter` grid layout.
 
 Starts the Tkinter event loop (`mainloop`), allowing the user to interact with the GUI.
 
